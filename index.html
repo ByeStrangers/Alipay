@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" charset="utf-8">
+      	mui.init(); 
+    </script>
+</head>
+<body>
+	
+	<nav class="mui-bar mui-bar-tab footer"> 
+	    <a class="mui-tab-item mui-active" href="home.html">
+	        <span class="mui-icon icon iconfont icon-qianbaopengyou"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item" href="wealth.html">
+	        <span class="mui-icon icon iconfont icon-caifua"></span>
+	        <span class="mui-tab-label">财富</span>
+	    </a>
+	    <a class="mui-tab-item" href="praise.html">
+	        <span class="mui-icon icon iconfont icon-gouwu"></span>
+	        <span class="mui-tab-label">口碑</span>
+	    </a>
+	    <a class="mui-tab-item" href="friends.html">
+	        <span class="mui-icon icon iconfont icon-shejiao"></span>
+	        <span class="mui-tab-label">朋友</span>
+	    </a>
+	    <a class="mui-tab-item" href="mine.html"> 
+	        <span class="mui-icon icon iconfont icon-changbei"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a> 
+	</nav>
+</body>
+<script>
+	var subpages = ["home.html","wealth.html","praise.html","friends.html","mine.html"];
+	var index = 0;
+	mui.plusReady(function(){
+		 var currentwebview = plus.webview.currentWebview();
+		 for(var i = 0; i < 5; i++){
+		 	var sub = plus.webview.create(subpages[i], subpages[i],{
+		 		top: "0px",
+		 		bottom: "51px"
+		 	});
+		 	if(i > 0){
+		 		sub.hide();
+		 	}
+		 	currentwebview.append(sub);
+		 }
+	})
+	var activeTab = subpages[0];
+	mui(".footer").on("tap","a",function(){
+		var targetPage = this.getAttribute("href");
+		activeTab = mui(".footer .mui-active")[0].getAttribute("href");
+		if (targetPage == activeTab) {
+			return;
+		}
+		plus.webview.hide(activeTab);
+		plus.webview.show(targetPage);
+			
+	})
+</script>
+</html>

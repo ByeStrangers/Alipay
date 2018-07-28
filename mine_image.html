@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+	 	<img src="" width="100%" id="myimg"/>
+	 	<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="pick">从相册选取</button>
+	 	<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="capture">拍一张</button>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+	<script>
+		var pick = document.getElementById("pick");
+		var capture = document.getElementById("capture");
+		var myimg = document.getElementById("myimg");
+		mui.plusReady(function(){
+			var currentWindow = plus.webview.currentWebview();
+			myimg.src = currentWindow.imgSrc;
+		})
+		
+		pick.addEventListener("tap",function(){
+			plus.gallery.pick(function(filepath){
+				myimg.src = filepath;
+			})
+		})
+		
+		capture.addEventListener("tap",function(){
+			var cm = plus.camera.getCamera();
+			cm.captureImage(function(filepath){
+				var localpath = plus.io.convertLocalFileSystemURL(filepath);
+				myimg.src = localpath;
+			})
+		})
+	</script>
+</html>

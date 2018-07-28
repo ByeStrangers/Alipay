@@ -1,0 +1,171 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/common.css",
+      "home.html"
+    ],
+    "refer": [
+      "home.html",
+      "wealth.html",
+      "friends.html",
+      "praise.html",
+      "mine.html"
+    ]
+  },
+  "home.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/home.css",
+      "img/1.png",
+      "img/banner.png",
+      "img/img2.png",
+      "img/img1.png",
+      "img/rightimg.png",
+      "img/rightimg1.png",
+      "js/common.js",
+      "js/immersed.js"
+    ],
+    "refer": [
+      "saoma.html"
+    ]
+  },
+  "praise.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/praise.css",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "praise_list.html"
+    ],
+    "refer": [
+      "praise_list.html"
+    ]
+  },
+  "friends.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/friend.css",
+      "css/common.css",
+      "css/iconfont.css",
+      "friends_list.html"
+    ],
+    "refer": [
+      "friends_list.html",
+      "contacts.html"
+    ]
+  },
+  "mine.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/common.css",
+      "css/mine.css",
+      "mine_list.html"
+    ],
+    "refer": [
+      "mine_list.html"
+    ]
+  },
+  "wealth.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ]
+  },
+  "saoma.html": {
+    "resources": [
+      "js/mui.min.js",
+      "js/common.js"
+    ]
+  },
+  "praise_list.html": {
+    "resources": [
+      "img/praise_icon8.png",
+      "img/praise_icon2.png",
+      "img/praise_icon5.png",
+      "img/praise_icon4.png",
+      "img/praise_icon9.png",
+      "img/praise_icon7.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/praise_banner.png",
+      "img/praise_icon1.png",
+      "img/praise_icon6.png",
+      "img/praise_icon3.png",
+      "img/praise_icon.png",
+      "css/praise.css",
+      "img/praise_img5.png",
+      "img/praise_img6.png",
+      "img/praise_img4.png",
+      "img/praise_img2.png",
+      "img/praise_img3.png",
+      "img/praise_img1.png"
+    ]
+  },
+  "friends_list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/friends_icon2.png",
+      "img/friends_icon3.png",
+      "img/friends_icon1.png",
+      "css/friend.css",
+      "img/friends_icon4.png",
+      "img/friends_icon6.png",
+      "img/friends_icon5.png",
+      "img/friends_icon8.png",
+      "img/friends_icon7.png"
+    ],
+    "refer": [
+      "im-chat.html"
+    ]
+  },
+  "mine_list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/mine.png",
+      "css/mine.css",
+      "css/iconfont.css"
+    ],
+    "refer": [
+      "mine_image.html"
+    ]
+  },
+  "im-chat.html": {
+    "resources": [
+      "js/mui.imageViewer.js",
+      "css/app.css",
+      "css/mui.imageviewer.css",
+      "js/arttmpl.js",
+      "img/logo.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "mine_image.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ]
+  },
+  "contacts.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ]
+  }
+}
